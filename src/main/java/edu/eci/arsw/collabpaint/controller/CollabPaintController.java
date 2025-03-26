@@ -13,6 +13,7 @@ public class CollabPaintController {
     @MessageMapping("/newpoint.{drawingId}")
     @SendTo("/topic/newpoint.{drawingId}")
     public Point handlePoint(Point point, @DestinationVariable String drawingId) {
+        System.out.println("Nuevo punto recibido en el servidor!: " + point);
         return point;
     }
 }
