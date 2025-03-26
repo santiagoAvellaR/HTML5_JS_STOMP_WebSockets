@@ -8,9 +8,15 @@
 
 # Solución Parte I
 
-![](img/part-1.png)
+![Parte 1](img/part-1.png)
 
+# Solución Parte II
+![Parte 2](img/part-2.0.png)
+![Parte 2](img/part-2.1.png)
+![Parte 2](img/part-2.2.png)
+---------
 
+![Parte 2](img/part-2.3.png)
 
 
 - Conectarse con un botón

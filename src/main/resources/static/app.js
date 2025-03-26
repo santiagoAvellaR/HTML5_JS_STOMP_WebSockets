@@ -9,15 +9,16 @@ var app = (function () {
     
     var stompClient = null;
 
-    var addPointToCanvas = function (point) {        
+    var addPointToCanvas = function (point) {
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
         ctx.beginPath();
-        ctx.arc(point.x, point.y, 3, 0, 2 * Math.PI);
-        ctx.stroke();
+        ctx.arc(point.x, point.y, 1, 0, 2 * Math.PI); // Radio 1
+        ctx.fill();  // También podrías usar stroke(), pero fill() pinta el círculo
     };
-    
-    
+
+
+
     var getMousePosition = function (evt) {
         canvas = document.getElementById("canvas");
         var rect = canvas.getBoundingClientRect();
@@ -39,7 +40,6 @@ var app = (function () {
             stompClient.subscribe('/topic/newpoint', function (message) {
                 var point = JSON.parse(message.body);
                 addPointToCanvas(point);
-                alert("Nuevo punto recibido: x = " + point.x + ", y = " + point.y);
             });
         });
 
@@ -50,8 +50,12 @@ var app = (function () {
     return {
 
         init: function () {
-            var can = document.getElementById("canvas");
-            
+            var canvas = document.getElementById("canvas");
+            canvas.addEventListener('click', function(evt) {
+                var pos = getMousePosition(evt);
+                app.publishPoint(pos.x, pos.y);
+            });
+
             //websocket connection
             connectAndSubscribe();
         },
