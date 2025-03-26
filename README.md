@@ -2,6 +2,15 @@
 ### Arquitecturas de Software - ARSW
 ### Laboratorio - Broker de Mensajes STOMP con WebSockets + HTML5 Canvas.
 
+### Integrantes
+- Santiago Avellaneda 
+- Miguel Motta
+
+# Solución Parte I
+
+![](img/part-1.png)
+
+
 
 
 - Conectarse con un botón
