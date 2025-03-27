@@ -2,7 +2,36 @@
 ### Arquitecturas de Software - ARSW
 ### Laboratorio - Broker de Mensajes STOMP con WebSockets + HTML5 Canvas.
 
+### Integrantes
+- Santiago Avellaneda 
+- Miguel Motta
 
+# Solución Parte I
+
+![Parte 1](img/part-1.png)
+
+# Solución Parte II
+![Parte 2](img/part-2.0.png)
+![Parte 2](img/part-2.1.png)
+![Parte 2](img/part-2.2.png)
+---------
+
+![Parte 2](img/part-2.3.png)
+
+# Solución Parte III
+Modificación del html
+![Parte 3](img/parte-3-html.png)
+Creación del controlador para manejar diferentes rutas
+![Parte 3](img/parte3-controlador.png)
+Creación de las funciones para conectarse con el topico indicado y publicar en el topico indicado
+![Parte 3](img/parte3-js-1.png)
+![Parte 3](img/parte3-js-2.png)
+Resultado final
+![Parte 3](img/parte3.png)
+
+# Solución Parte IV
+Creación del controlador para manejar diferentes rutas y los poligonos
+![Parte 4](img/parte4.png)
 
 - Conectarse con un botón
 - publicar con eventos de mouse
