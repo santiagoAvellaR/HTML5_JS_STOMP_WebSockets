@@ -29,6 +29,10 @@ Creación de las funciones para conectarse con el topico indicado y publicar en 
 Resultado final
 ![Parte 3](img/parte3.png)
 
+# Solución Parte IV
+Creación del controlador para manejar diferentes rutas y los poligonos
+![Parte 4](img/parte4.png)
+
 - Conectarse con un botón
 - publicar con eventos de mouse
 

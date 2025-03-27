@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class CollabPaintController {
 
-    @MessageMapping("/newpoint.{drawingId}")
+    @MessageMapping("/newpoint.{drawingId}/v1")
     @SendTo("/topic/newpoint.{drawingId}")
     public Point handlePoint(Point point, @DestinationVariable String drawingId) {
         System.out.println("Nuevo punto recibido en el servidor!: " + point);
